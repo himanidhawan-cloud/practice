@@ -1,0 +1,1 @@
+print("naya din nayi shuruat")
