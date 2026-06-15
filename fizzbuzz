@@ -1,0 +1,18 @@
+entry=int(input("enter no. of elements to be inserted"))
+num=entry+1
+l=[]
+final=[]
+for i in range (1,num):
+    if (i%3==0 and i%5==0):
+        i="fizzbuzz"
+        final.append(i)
+    elif(i%3==0):
+        i="fizz"
+        final.append(i)
+    elif(i%5==0):
+        i="buzz"
+        final.append(i)
+    else:
+        final.append(i)
+print(final)
+    

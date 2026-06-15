@@ -10,3 +10,9 @@ if (num%2==0):
     print("even")
 else:
     print("odd")
+
+users=['himani','ram','shayam','raju']
+if 'ram' in users:
+    print("ram is present")
+else:
+    print("ram is not present")
