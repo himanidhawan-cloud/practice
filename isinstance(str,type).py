@@ -15,11 +15,11 @@ while num !='q':
     num=input("enter a number or q ")
     if num.isalpha():
         if num in ['q','Q']:
-            print("execution over : ")
+            print("execution over thanks for your precious time ")
             break
         else: 
             print("wrong input try again : ")
-            pass
+            continue
     elif num.isdigit():
         num1=int(num)
         if num1%2==0:
