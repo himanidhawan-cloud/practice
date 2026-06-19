@@ -8,5 +8,13 @@ jobs:
   run-test-commands:
     runs-on: ubuntu-latest
     steps:
+      - name: Copy Code To Machine
+        uses: actions/checkout@v4
+
       - name: Print Welcome Message
         run: echo "The GitHub cloud machine is working perfectly!"
+
+      - name: Show Project Files
+        run: |
+          echo "Listing the files inside this repository:"
+          ls -la
