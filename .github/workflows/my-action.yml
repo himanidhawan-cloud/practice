@@ -14,10 +14,10 @@ jobs:
         run: echo "hello ji"
       - name:  "newing"
         run: echo "hanji"
-    dance:
-      runs-on: server1
-      steps:
-        - name: "This is kathak"
-          run:  echo "india 's heritage"
-        - name: "This is Bharatnatyam "
-          run: echo "dance form"
+  dance:
+    runs-on: server1
+    steps:
+      - name: "This is kathak"
+        run:  echo "india 's heritage"
+      - name: "This is Bharatnatyam "
+        run: echo "dance form"
