@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "stating"
-      run: echo "hello ji"
+        run: echo "hello ji"
