@@ -11,6 +11,7 @@ on:
   
 jobs:
   hello:
+    need: dance
     runs-on: ubuntu-latest
     steps:
       - name: "stating"
