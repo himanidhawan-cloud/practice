@@ -2,6 +2,9 @@ name: helo ji
 on: 
   push:
     branches:  [master]
+  pull_request_target: 
+    branches:  [master]
+
   
 jobs:
   hello:
@@ -9,3 +12,5 @@ jobs:
     steps:
       - name: "stating"
         run: echo "hello ji"
+      - name:  "newing"
+        run: echo "hanji"
