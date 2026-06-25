@@ -11,8 +11,8 @@ on:
   
 jobs:
   hello:
-    need: dance
     runs-on: ubuntu-latest
+    needs: dance
     steps:
       - name: "stating"
         run: echo "hello ji"
