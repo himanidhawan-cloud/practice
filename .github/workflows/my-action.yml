@@ -25,5 +25,5 @@ jobs:
       - name: "secret key existence"
           env: 
             mypassword: ${{secrets.MY_TEST_PASSWORD}}
-        run: echo "WELL DONE HIMANI JI ............"
+          run: echo "WELL DONE HIMANI JI ............"
 
