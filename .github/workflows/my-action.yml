@@ -19,6 +19,18 @@ jobs:
       - name: "newing"
         run: echo "hanji"
   dance:
+    needs: byebye
+    runs-on: ubuntu-22.04
+    steps:
+      - name: "This is kathak"
+        run: echo "india 's heritage"
+      - name: "This is Bharatnatyam "
+        run: echo "dancing bharat "              
+      - name: secret key existence
+        env:
+          mypassword: "${{ secrets.MY_TEST_PASSWORD }}"
+        run: echo "$mypassword"
+  byebye:   
     runs-on: ubuntu-22.04
     steps:
       - name: "This is kathak"
