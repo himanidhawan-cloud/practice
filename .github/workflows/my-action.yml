@@ -1,0 +1,12 @@
+# NOJRS
+name: helo ji
+on: 
+  push:
+    branches:  [main]
+  
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "stating"
+      run: echo "hello ji"
