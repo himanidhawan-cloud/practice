@@ -15,7 +15,7 @@ jobs:
       - name:  "newing"
         run: echo "hanji"
   dance:
-    runs-on: server1
+    runs-on: ubuntu-latest
     steps:
       - name: "This is kathak"
         run:  echo "india 's heritage"
