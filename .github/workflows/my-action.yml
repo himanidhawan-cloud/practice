@@ -1,6 +1,8 @@
 #nodsr
 name: helo ji
 on: 
+  workflow_dispatch: 
+    
   schedule:
     - cron: '*/5 * * * *' 
 
