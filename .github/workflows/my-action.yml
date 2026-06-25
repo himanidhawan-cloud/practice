@@ -2,9 +2,9 @@
 name: helo ji
 on: 
   push:
-    branches:  [master]
+    branches: [master]
   pull_request_target: 
-    branches:  [master]
+    branches: [master]
 
   
 jobs:
@@ -13,17 +13,17 @@ jobs:
     steps:
       - name: "stating"
         run: echo "hello ji"
-      - name:  "newing"
+      - name: "newing"
         run: echo "hanji"
   dance:
     runs-on: ubuntu-22.04
     steps:
       - name: "This is kathak"
-        run:  echo "india 's heritage"
+        run: echo "india 's heritage"
       - name: "This is Bharatnatyam "
         run: echo "dance form"
       - name: "secret key existence"
           env: 
             mypassword: ${{secrets.MY_TEST_PASSWORD}}
-        run:  echo "WELL DONE HIMANI JI ............"
+        run: echo "WELL DONE HIMANI JI ............"
 
