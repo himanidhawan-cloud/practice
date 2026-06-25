@@ -21,3 +21,8 @@ jobs:
         run:  echo "india 's heritage"
       - name: "This is Bharatnatyam "
         run: echo "dance form"
+      - name: "secret key existence"
+          env: 
+            mypassword: ${{secrets.MY_TEST_PASSWORD}}
+          run:  echo "WELL DONE HIMANI JI ............"
+
