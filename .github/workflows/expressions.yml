@@ -5,16 +5,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  runs-on: ubuntu-latest
   expression:
-    step:
+    runs-on: ubuntu-latest
+    steps:
       - name: 1st stage 
-        run: echo "{{github.actor}}"
+        run: echo "${{github.actor}}"
       - name: 2nd stage
-        run: echo {{github.repository}}
+        run: echo "${{github.repository}}"
       - name: Print Branch
-        run: echo "Branch = ${{ github.ref }}"
+        run: echo "${{ github.ref }}"
       - name: Print Event
-        run: echo "Event = ${{ github.event_name }}"
+        run: echo "${{ github.event_name }}"
       - name: Print Runner
-        run: echo "OS = ${{ runner.os }}"
+        run: echo "${{ runner.os }}"
