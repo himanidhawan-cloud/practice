@@ -2,9 +2,9 @@ name: triggers
 on:
   repository_dispatch:
     types: [pizza-delivery]
-  jobs:
-    hello:
-      runs-on: ubuntu-latest
-      steps:
-        - name: "new version"
-          run: echo "hiiiiiiiiiiiiiiii"
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "new version"
+        run: echo "hiiiiiiiiiiiiiiii"
