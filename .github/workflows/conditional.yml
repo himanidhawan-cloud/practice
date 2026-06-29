@@ -1,6 +1,8 @@
 name: If Demo
 
 on:
+  push:
+    branch: [master]
   workflow_dispatch:
 
 jobs:
