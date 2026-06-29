@@ -1,10 +1,21 @@
-name: triggers
+name: Repository Dispatch Demo
+
 on:
   repository_dispatch:
-    types: [pizza-delivery]
+    types:
+      - webhook
+
 jobs:
-  hello:
+  webhook-demo:
     runs-on: ubuntu-latest
+
     steps:
-      - name: "new version"
-        run: echo "hiiiiiiiiiiiiiiii"
+      - name: Print Event
+        run: |
+          echo "Workflow triggered successfully!"
+          echo "Event Name: $GITHUB_EVENT_NAME"
+
+      - name: Print Payload
+        run: |
+          echo "Name: ${{ github.event.client_payload.name }}"
+          echo "Course: ${{ github.event.client_payload.course }}"
