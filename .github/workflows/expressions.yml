@@ -20,6 +20,6 @@ jobs:
         run: echo "${{ runner.os }}"
       - name: functions
         run: |
-         echo ${{startsWith("hello","he")}}
+         echo ${{startsWith('hello','he')}}
          echo "Testing contains: ${{ contains('pizza-delivery', 'pizza') }}"
          echo "Testing endsWith: ${{ endsWith('manual.yml', '.yml') }}"
