@@ -16,10 +16,10 @@ on:
         description: 'type the greeting'
         required: true
         type: string
-      date:
-        description: 'date'
-        required: true
-        type: true
+      data:
+        description: 'Base64 encoded content of a file'
+        required: false
+        type: string
 
 
 
