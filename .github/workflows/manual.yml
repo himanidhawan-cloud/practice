@@ -24,7 +24,7 @@ on:
 
 
 
-jobsé
+jobs:
   hello: 
     runs-on: ubuntu-latest
     steps:
