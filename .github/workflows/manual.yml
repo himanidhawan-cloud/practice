@@ -1,0 +1,25 @@
+#nojrs
+name: manual working
+
+on:
+
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'name for the yml'
+        required: True
+        type: string
+
+
+
+
+
+jobs:
+    hello: 
+      runs-on: ubuntu-latest
+      steps:
+        - name: helloing
+          run: echo "hi"
+
+
+    
