@@ -1,0 +1,21 @@
+name: If Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Step 1
+        run: echo "This always runs."
+
+      - name: Step 2
+        if: true
+        run: echo "Condition is TRUE."
+
+      - name: Step 3
+        if: false
+        run: echo "You will never see this."
