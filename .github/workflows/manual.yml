@@ -14,15 +14,12 @@ on:
         type: string
 
 
-
-
-
 jobs:
-    hello: 
-      runs-on: ubuntu-latest
-      steps:
-        - name: helloing
-          run: echo "hi"
+  hello: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: helloing
+        run: echo "hi" , ${{inputs.name}}
 
 
     
