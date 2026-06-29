@@ -31,7 +31,10 @@ jobs:
       - name: helloing
         run: echo "hi , ${{inputs.name}}"
       - name: greeting
-        run: echo "${{inputs.greetig}} , ${{inputs.name}}, ${{inputs.date}}, trying to run this code with manual approach help meeeeeee"
-
+        run: echo "${{inputs.greetig}} , ${{inputs.name}}, ${{inputs.data}}, trying to run this code with manual approach help meeeeeee"
+      - name: Display File Content
+        run: |
+          echo "Contents of the file:"
+          cat ./decoded_file.txt
 
     
