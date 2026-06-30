@@ -1,0 +1,25 @@
+# action.yml (The configuration file for your custom action)
+name: 'Hello Greeter'
+description: 'Greets someone and outputs the time'
+
+# 1. INPUTS: What the action needs from the user
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+
+# 2. OUTPUTS: What the action sends back after it finishes
+outputs:
+  greeting-message:
+    description: 'The final greeting string'
+    value: ${{ steps.build-greeting.outputs.msg }}
+
+# 3. RUNS: The actual logic/steps of the action
+runs:
+  using: 'composite'
+  steps:
+    - id: build-greeting
+      shell: bash
+      run: |
+        echo "msg=Hello ${{ inputs.who-to-greet }}!" >> $GITHUB_OUTPUT

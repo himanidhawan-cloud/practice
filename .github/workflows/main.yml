@@ -1,0 +1,10 @@
+# .github/workflows/main.yml
+jobs:
+  greet-job:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Run your custom action
+      - name: Say Hello
+        uses: .template/action.yml
+        with:
+          who-to-greet: 'Mona'
