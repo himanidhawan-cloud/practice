@@ -1,14 +1,20 @@
-# .github/workflows/main.yml
+ on:
+  push:
+    branches:
+      - main  # Runs automatically whenever you push code to the main branch
+  workflow_dispatch: # Adds a "Run workflow" button in the GitHub UI so you can run it manually
+
 jobs:
   greet-job:
     runs-on: ubuntu-latest
     steps:
-      # 1. FIX 1: You must pull your code into the runner first!
+      # 2. Checkout the repository so the runner can see your local files
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 2. FIX 2: Point to the FOLDER, not the file, and add "./" at the start
+      # 3. Point to the FOLDER containing your action.yml
       - name: Say Hello
         uses: ./.template
         with:
           who-to-greet: 'Mona'
+
