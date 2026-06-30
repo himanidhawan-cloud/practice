@@ -3,8 +3,12 @@ jobs:
   greet-job:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Run your custom action
+      # 1. FIX 1: You must pull your code into the runner first!
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. FIX 2: Point to the FOLDER, not the file, and add "./" at the start
       - name: Say Hello
-        uses: .template/action.yml
+        uses: ./.template
         with:
           who-to-greet: 'Mona'
