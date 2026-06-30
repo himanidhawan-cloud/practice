@@ -23,4 +23,4 @@ jobs:
          echo ${{startsWith('hello','he')}}
          echo "Testing contains: ${{ contains('pizza-delivery', 'pizza') }}"
          echo "Testing endsWith: ${{ endsWith('manual.yml', '.yml') }}"
-         echo "${{ context.property }}"
+         echo "${{ runner.os }}"
